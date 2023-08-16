@@ -1,28 +1,28 @@
 import mysql.connector
 
-# Replace these values with your MySQL server's information
+-- Replace these values with your MySQL server's information
 host = "localhost"
 user = "root"
 password = "Folio9470m"
 
-# Connect to the MySQL server
+-- Connect to the MySQL server
 try:
     connection = mysql.connector.connect(
-        host=host,
-        user=user,
-        password=password
+        host=localhost,
+        user=root,
+        password=Folio9470m
     )
 
-    # Create a cursor
+    -- Create a cursor
     cursor = connection.cursor()
 
-    # Execute SQL query to list all databases
+    --Execute SQL query to list all databases
     cursor.execute("SHOW DATABASES")
 
-    # Fetch all the database names
+    --Fetch all the database names
     databases = cursor.fetchall()
 
-    # Print the list of databases
+    -- Print the list of databases
     print("List of databases:")
     for db in databases:
         print(db[0])
