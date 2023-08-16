@@ -1,1 +1,0 @@
-This repository contains database files for alx projects
