@@ -1,8 +1,8 @@
 -- Connect to MySQL server (replace with your connection details)
 USE mysql;
 -- Your MySQL username and password
-SET @username = 'your_username';
-SET @password = 'your_password';
+SET @username = 'root';
+SET @password = 'Folio9470m';
 
 -- Attempt to create the database
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
