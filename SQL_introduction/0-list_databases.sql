@@ -1,37 +1,11 @@
-import mysql.connector
-
--- Replace these values with your MySQL server's information
-host = "localhost"
-user = "root"
-password = "Folio9470m"
-
+-- a script that lists all databases of your MySQL server.
 -- Connect to the MySQL server
-try:
-    connection = mysql.connector.connect(
-        host=localhost,
-        user=root,
-        password=Folio9470m
-    )
 
-    -- Create a cursor
-    cursor = connection.cursor()
+mysql -u root -p Folio9470m
 
-    --Execute SQL query to list all databases
-    cursor.execute("SHOW DATABASES")
+-- List all databases
+SHOW DATABASES;
 
-    --Fetch all the database names
-    databases = cursor.fetchall()
+-- Exit the MySQL client
+EXIT;
 
-    -- Print the list of databases
-    print("List of databases:")
-    for db in databases:
-        print(db[0])
-
-except mysql.connector.Error as err:
-    print("Error:", err)
-
-finally:
-    if connection.is_connected():
-        cursor.close()
-        connection.close()
-        print("Connection closed.")
