@@ -9,7 +9,3 @@ FROM information_schema.columns
 WHERE table_schema = \'', @dbName, '\' AND table_name = \'first_table\'
 GROUP BY table_name');
 
--- Prepare and execute the dynamic SQL query
-PREPARE stmt FROM @sqlQuery;
-EXECUTE stmt;
-DEALLOCATE PREPARE stmt;
