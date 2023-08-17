@@ -3,4 +3,4 @@
 INSERT INTO hbtn_0c_0.first_table (id, name) VALUES (89, 'Holberton School');
 
 -- run script
-mysql -u your_username -p -h your_host -D hbtn_0c_0 < your_script.sql
+-- mysql -u your_username -p -h your_host -D hbtn_0c_0 < your_script.sql
