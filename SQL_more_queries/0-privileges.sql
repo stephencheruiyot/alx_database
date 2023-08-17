@@ -11,5 +11,3 @@ SELECT *
 FROM user
 WHERE User IN ('user_0d_2')\G;
 
--- Disconnect from the MySQL server
-QUIT;
