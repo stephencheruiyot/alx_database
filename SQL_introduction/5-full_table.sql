@@ -6,5 +6,5 @@ WHERE TABLE_SCHEMA = 'hbtn_0c_0'
 AND TABLE_NAME = 'first_table';
 
 
---run code AS
-mysql -u username -p -e "USE hbtn_0c_0; SELECT * FROM first_table;"
+-- run code AS
+-- mysql -u username -p -e "USE hbtn_0c_0; SELECT * FROM first_table;"
