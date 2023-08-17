@@ -1,13 +1,19 @@
--- Connect to the MySQL server
-USE mysql;
+-- Create users
+CREATE USER 'user_0d_1'@'localhost';
+CREATE USER 'user_0d_2'@'localhost';
 
--- List privileges for user_0d_1
-SELECT *
-FROM user
-WHERE User IN ('user_0d_1')\G;
+-- Grant privileges to user_0d_1
+GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';
 
--- List privileges for user_0d_2
-SELECT *
-FROM user
-WHERE User IN ('user_0d_2')\G;
+-- Grant privileges to user_0d_2
+GRANT ALL PRIVILEGES ON *.* TO 'user_0d_2'@'localhost';
+
+-- Flush privileges to apply changes
+FLUSH PRIVILEGES;
+
+-- Show privileges for user_0d_1
+SHOW GRANTS FOR 'user_0d_1'@'localhost';
+
+-- Show privileges for user_0d_2
+SHOW GRANTS FOR 'user_0d_2'@'localhost';
 
