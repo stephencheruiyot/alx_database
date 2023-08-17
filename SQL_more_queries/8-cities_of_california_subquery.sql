@@ -1,6 +1,3 @@
--- Use the specified database
-USE hbtn_0d_usa;
-
 -- Get the ID of California state
 SELECT id INTO @california_id FROM states WHERE name = 'California';
 
