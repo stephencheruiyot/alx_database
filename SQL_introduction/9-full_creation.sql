@@ -1,3 +1,4 @@
+-- select database
 USE hbtn_0c_0;
 
 -- Create second_table if it doesn't exist
