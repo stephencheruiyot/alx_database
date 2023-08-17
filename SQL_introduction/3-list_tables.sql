@@ -1,4 +1,6 @@
 -- Query to list all tables in the specified database
-SELECT mysql
+USE mysql;
+
+SELECT table_name
 FROM information_schema.tables
-WHERE table_schema = mysql;
+WHERE table_schema = 'mysql';
