@@ -3,6 +3,9 @@
 
 CREATE TABLE IF NOT EXISTS `first_table`
  (
-    `id` INT,
-    `name` VARCHAR(256)
+`id`intNOTNULLAUTO_INCREMENT,
+`name`varchar(128)DEFAULTNULL,
+`c`char(1)DEFAULTNULL,
+`created_at`dateDEFAULTNULL,
+PRIMARYKEY(`id`)
 );
